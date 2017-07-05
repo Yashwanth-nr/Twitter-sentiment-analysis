@@ -1,0 +1,29 @@
+<!-- <h3><span class="label label-primary">Results</span></h3> 
+ -->
+
+ <div class="page-header info">
+  <h1>Results <small> for #<%=params[:hashtag]%></small></h1>
+</div>
+<div class="col-md-6">
+<table class="table table-condensed">
+<thead>
+	<tr>
+		<th> </th>
+		<th> </th>
+	</tr>
+</thead>
+<tbody>
+	<% @output.each do |key,value|%>
+	<tr class="info">
+		<td> <%= key %> </td>
+		<td> <%= value%> </td>
+	</tr>
+	<% end %>
+</tbody>
+</table>
+</div>
+<%#= @output %>
+<div class="col-md-6">
+<%= column_chart(@output) %>
+</div>
+<%#= pie_chart(@output) %>

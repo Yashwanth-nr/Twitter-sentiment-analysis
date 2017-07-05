@@ -1,0 +1,20 @@
+<div class="col-md-4">
+<%= form_tag("/home/results", method: :get) do %>
+
+<form class="navbar-form navbar-left" role="search">
+
+<!-- <h3><span class="label label-primary">Hashtag</span></h3> --> 	
+<div class="page-header">
+  <h3>Enter Hashtag</h3>
+
+  <div class="form-group">
+  
+	<%= text_field_tag :hashtag, "", class: "form-control" %> 
+  </div>
+	<%= submit_tag "Search", class: "btn btn-primary" %>
+</form>
+</div>
+</div>
+<%end %>
+
+
